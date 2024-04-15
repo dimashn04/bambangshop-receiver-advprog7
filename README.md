@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [v] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [v] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [v] Commit: `Create Notification service struct skeleton.`
+    -   [v] Commit: `Implement subscribe function in Notification service.`
+    -   [v] Commit: `Implement subscribe function in Notification controller.`
+    -   [v] Commit: `Implement unsubscribe function in Notification service.`
+    -   [v] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [v] Commit: `Implement receive_notification function in Notification service.`
+    -   [v] Commit: `Implement receive function in Notification controller.`
+    -   [v] Commit: `Implement list_messages function in Notification service.`
+    -   [v] Commit: `Implement list function in Notification controller.`
+    -   [v] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -90,3 +90,8 @@ This is the place for you to write reflections:
 2. lazy_static serves to make a variable into a singleton which means the variable will only exist 1 in the program. In addition, static variables in rust are made immutable by rust unlike in Java which can change its data to ensure thread safety when multi threading.  
 
 #### Reflection Subscriber-2
+1. In my opinion, lib.rs contains information that is needed by other parts of the application. Such as Error Response, root URL and singleton of App Configuration.  
+
+2. Yes, due to the design of the code writing that has been done, adding new observer types will be easier to add because the program is open close for such changes. For the case of instantiating more than 1 Main App, it can still be done because it is just a matter of registering subscribers to different applications by hitting the appropriate API.  
+
+3. Yes, I think it's very useful. With Postman testing or collection, we can know the correctness of our program. Collection Postman also helps in verifying whether the program sends a response and runs according to our expectations or not because it uses real data in the application.  
